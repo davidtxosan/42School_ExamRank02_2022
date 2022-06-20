@@ -1,0 +1,11 @@
+
+Assignment name  : ft_strcspn
+Expected files   : ft_strcspn.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Reproduce the behavior of the function strcspn (man strcspn).
+
+Your function must be declared as follows:
+
+size_t  ft_strcspn(const char   *s, const char  *reject);
