@@ -1,13 +1,20 @@
-int     is_power_of_2(unsigned int n)
+#include <stdio.h>
+int	is_power_of_2(unsigned int n)
 {
-    int     i;
+	int	i = 1;
 
-    i = 1;
-    while (i <= n)
-    {
-        if (i == n)
-            return (1);
-        i *= 2;
-    }
-    return (0);
+	while (i <= n)
+	{
+		if (i == n)
+			return (1);
+		i *= 2;
+	}
+	return (0);
 }
+/*
+int main (void)
+{
+	int i = is_power_of_2(3);
+	printf("%i\n", i);
+}
+*/
