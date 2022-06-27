@@ -1,9 +1,10 @@
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
 	int	c = 0;
-	while (*s1)
+	while (*s1 != '\0')
 	{
-		while (s2[c] != '\0')
+		int	c = 0;
+		while (s2[c])
 		{
 			if (*s1 == s2[c])
 				return ((char *)s1);
