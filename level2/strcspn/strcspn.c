@@ -21,7 +21,17 @@ size_t	ft_strcspn(const char *s, const char *reject)
 #include <string.h>
 int main ()
 {
-	printf("%lu\n", ft_strcspn("testera", "a"));
-	printf("%lu\n", strcspn("testera", "a"));
+	printf("%lu\n", ft_strcspn("testera", "ra"));
+	printf("%lu\n", strcspn("testera", "ra"));
+}
+*/
+/*
+int main(void)
+{
+	char s1[] = "holas";
+	char s2[] = " ams";
+	printf("%lu\n", ft_strcspn(s1, s2));
+	printf("%lu\n", strcspn(s1, s2));
+	return(0);
 }
 */

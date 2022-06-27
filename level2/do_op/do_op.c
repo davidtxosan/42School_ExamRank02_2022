@@ -1,30 +1,30 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 int main (int ac, char **ag)
 {
-	int first = atoi(ag[1]);
-	char oper = ag[2][0];
-	int second = atoi(ag[3]);
-	int res;
+	int number1;
+	int number2;
+	char oper;
+	int result;
 	if(ac == 4)
 	{
-		if(oper == '+')
-			res = first + second;
+		number1 = atoi(ag[1]);
+		number2 = atoi(ag[3]);
+		oper = ag[2][0];
+		if( oper == '+')
+			result = number1 + number2;
 		else if (oper == '-')
-			res = first - second;
+			result = number1 - number2;
 		else if (oper == '*')
-			res = first * second;
+			result = number1 * number2;
 		else if (oper == '/')
-			res = first / second;
+			result = number1 / number2;
 		else if (oper == '%')
-			res = first % second;
-		printf("%d", res);
-		printf("\n");
-
+			result = number1 % number2;
+		printf("%i\n", result);
 	}
-	else
-		write(1, "\n", 1);
+	write(1,"\n", 1); 
 	return (0);
 }
