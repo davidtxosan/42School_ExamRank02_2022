@@ -1,24 +1,29 @@
+
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
-	int	c = 0;
-	while (*s1 != '\0')
+	int c;
+
+	while (*s1)
 	{
-		int	c = 0;
+		c = 0;
 		while (s2[c])
 		{
-			if (*s1 == s2[c])
-				return ((char *)s1);
+		if (*s1 == s2[c])
+			return ((char *)s1);
 			c++;
 		}
-		s1++;
+		++s1;
+		
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
-int main ()
+int main (void)
 {
-	printf("%s\n", ft_strpbrk("This is a string to search in", "qxd"));
-	printf("%s\n", strpbrk("This is a string to search in", "qxd"));
+	printf("ft: %s real: %s\n",ft_strpbrk("Tqxd", "qxd"),strpbrk("Tqxd", "qxd"));
+	printf("%s\n", ft_strpbrk("Tqxd", "qxd"));
+	return (0);
 }
+*/
