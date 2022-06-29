@@ -1,5 +1,3 @@
-// Passed Moulinette 2019.09.01
-
 unsigned char	reverse_bits(unsigned char octet)
 {
 	unsigned char out = 0;

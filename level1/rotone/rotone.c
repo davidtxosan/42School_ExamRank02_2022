@@ -8,9 +8,9 @@ int main (int ac, char **ag)
 		{
 			if(ag[1][i] == 'z' || ag[1][i] == 'Z')
 				ag[1][i] -= 25;
-			else if (ag[1][i] >= 'a' && ag[1][i] <= 'z')
+			else if (ag[1][i] >= 'a' && ag[1][i] < 'z')
 				ag[1][i] += 1;
-			else if (ag[1][i] >= 'A' && ag[1][i] <= 'Z')
+			else if (ag[1][i] >= 'A' && ag[1][i] < 'Z')
 				ag[1][i] += 1;
 			write(1, &ag[1][i], 1);
 			i++;

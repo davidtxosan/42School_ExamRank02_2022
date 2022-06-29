@@ -77,3 +77,12 @@ There is no Norminette in the exam.
   - rostring
   - sort_int_tab
   - sort_list
+
+  # Total
+
+- Level 1 - 12 Questions
+- Level 2 - 20 Questions
+- Level 3 - 15 Questions
+- Level 4 - 10 Questions
+
+#### From a Pool of 57 Questions

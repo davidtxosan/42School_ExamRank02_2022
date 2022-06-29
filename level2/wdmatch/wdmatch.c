@@ -1,5 +1,3 @@
-// Passed Moulinette 2019.09.01
-
 #include <unistd.h>
 
 void	wdmatch(char *str, char *charset)
