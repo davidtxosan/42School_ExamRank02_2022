@@ -1,5 +1,3 @@
-// Passed Moulinette 2019.09.01
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +9,7 @@ int		is_prime(int n)
 	{
 		if (n % i == 0)
 			return (0);
-		++i;
+		i++;
 	}
 	return (1);
 }
@@ -37,7 +35,7 @@ void	fprime(char *str)
 			n = n / factor;
 		}
 		else
-			++factor;
+			factor++;
 	}
 }
 
