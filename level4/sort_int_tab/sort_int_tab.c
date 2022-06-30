@@ -1,5 +1,3 @@
-// Passed Moulinette 2019.09.01
-
 void	swap_values(int *a, int *b)
 {
 	int swap = *a;

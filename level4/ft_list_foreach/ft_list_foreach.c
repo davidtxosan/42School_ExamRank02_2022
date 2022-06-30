@@ -1,5 +1,3 @@
-// Passed Moulinette 2019.09.02
-
 #include <stdlib.h>
 #include "ft_list.h"
 
